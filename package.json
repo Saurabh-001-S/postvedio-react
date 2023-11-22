@@ -15,7 +15,6 @@
     "@formkit/auto-animate": "^1.0.0-beta.6",
     "axios": "^1.6.0",
     "framer-motion": "^10.3.2",
-    "media-recorder-js": "^2.1.0",
     "openai": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,7 +23,6 @@
     "react-markdown": "^8.0.5",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.18.0",
-    "react-webcam": "^7.2.0",
     "store2": "^2.14.2",
     "uuidv4": "^6.2.13",
     "zustand": "^4.3.6"

@@ -1,80 +1,131 @@
-/* Apply basic styles to the container */
-.container {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+/* CSS HEX */
+:root {
+  --jet: #353535ff;
+  --caribbean-current: #3c6e71ff;
+  --white: #FFFFFF;
+  --platinum: #d9d9d9ff;
+  --indigo-dye: #284b63ff;
+
+  --prussian-blue: #003049ff;
+  --fire-engine-red: #d62828ff;
+  --orange-wheel: #f77f00ff;
+  --xanthous: #fcbf49ff;
 }
 
-/* Style the buttons */
-.btn {
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #007bff;
-  /* Change the background color on hover */
-  color: #fff;
-  /* Change text color on hover */
-}
-
-/* Style the Download button */
-#download {
-  display: inline-block;
-  margin-top: 20px;
-}
-
-/* Style the video elements */
-video {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  /* Add a subtle shadow to videos */
-}
-
-/* Center the videos in their containers */
-.p-5 {
+.main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Asset/SVG/bg.svg);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
-/* Add animation to buttons on hover */
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--jet);
+  padding: 0.5rem 3rem;
+}
+
+.nav-logo {
+  width: 10%;
+  height: 100%;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .btn {
-  transition: transform 0.2s;
+  background: var(--prussian-blue);
+  font-weight: 300;
+  color: #FFFFFF;
+  font-family: monospace;
+  border: 2px solid var(--prussian-blue);
+  cursor: pointer;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  background: gray;
+  /* color: var(--orange-wheel); */
+  border: 2px solid var(--prussian-blue);
 }
 
-/* Upload button */
+.vedio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
 
-/* Style the file input and upload button */
-#uploadVideo {
-  display: none;
-  /* Hide the file input */
 }
 
-.btn-upload {
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.row-1,
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.btn-upload:hover {
-  background-color: #007bff;
-  color: #fff;
+.video-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#show-video,
-#show-video2 {
-  visibility: hidden;
+
+.download-btn {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+}
+
+.download-btn :hover {
+  background: transparent;
+}
+
+.download-btn svg {
+  width: 25px;
+  height: 25px;
+  stroke: var(--fire-engine-red);
+}
+
+.upload-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
